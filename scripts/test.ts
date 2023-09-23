@@ -1,8 +1,7 @@
 import { GlobalRegistrator } from "@happy-dom/global-registrator";
-GlobalRegistrator.register();
-
-// happy-dom
 import { Window } from 'happy-dom';
+
+GlobalRegistrator.register();
 const window = new Window();
 const document = window.document;
 global.document = document;

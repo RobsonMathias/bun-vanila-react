@@ -1,2 +1,10 @@
+[install]
+peer = true
+
+[build]
+logLevel = "debug"
+
 [test]
-preload = "./happydom.ts"
+preload = "./scripts/test.ts"
+coverage = true
+coverageThreshold = { line = 0.2, function = 0.2, statement = 0.2, branch = 0.2 }

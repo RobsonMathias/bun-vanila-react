@@ -1,11 +1,9 @@
 {
   "name": "bun-vanila-react",
-  "module": "index.ts",
-  "type": "module",
   "scripts": {
-    "start": "bun run ./src/index.tsx",
-    "build": "bun build ./src/index.tsx --outdir=./out --minify --splitting",
-    "dev": "bun build ./src/index.tsx --outdir=./out --watch --minify --splitting "
+    "start": "bun run ./scripts/start.ts --hot",
+    "test": "bun ./scripts/test.ts",
+    "build": "bun run ./scripts/build.ts"
   },
   "devDependencies": {
     "@happy-dom/global-registrator": "^12.1.6",
@@ -19,6 +17,8 @@
     "typescript": "^5.0.0"
   },
   "dependencies": {
+    "axios": "^1.5.0",
+    "pouchdb": "^8.0.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "web-vitals": "^3.4.0"
